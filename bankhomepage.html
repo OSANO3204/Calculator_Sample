@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Greenwood bank limited</title>
+    <link href="calcsaver.css" rel="stylesheet">
+  </head>
+  <body>
+<div class="main_div_hometab">
+  <div class="main_div_form_title_div">
+  <div class="main_div_title"><h1>GREENWOOD <BR/>BANK</h1></div>
+
+<form class="myupper_div_main_div">
+<div class="myupper_div_main_div_data personal">PERSONAL</div>
+<div class="myupper_div_main_div_data business">BUSINESS</div>
+<div class="myupper_div_main_div_data about"><label for="about">ABOUT</label> <select type="mission_vision_history">
+  <option value="MISSION">MISSION</option>
+      <option value="vISSION">vISSION</option>
+          <option value="HISTORY">HISTORY</option>
+
+</select></div>
+<div class="myupper_div_main_div_data Contacts">
+  <label for="about">CONTACTS</label> <select type="Contacts">
+    <option value="FACEBOOK ">FACEBOOK</option>
+        <option value="PHONE">PHONE</option>
+            <option value="TWITTER">TWITTER</option>
+
+  </select>
+
+</div>
+
+</form>
+
+</div>
+<form class="login_form">
+
+<input type type="text" placeholder="FULL NAMES" CLASS="login_values"></input>
+<input  type="Password" placeholder="PASSWORD" CLASS="login_values"></input>
+<button type="submit" class="login_button" value="Login">Login</button>
+</form>
+<body  class="middle_display_transition_di"  onload="ShowBanners()">
+<center>
+<img class="image_viewer" src="" width="70%" height="100%" name="ChangeBanner"/>
+</center>
+</div>
+</div>
+
+<script language="Javascript">
+
+function ShowBanners(){
+
+  let MyBanners=new Array('images5.jpg','imagesea.jpg','pic.jpg','imagesgroup.jpg',
+  'downloadallmusicians.jpg','downloadallmusicians.jpg','downloadmusic1.jpg',
+  'downloadmusic2.jpg','downloadmusic3.jpg','downloadEMINEN.jpg',
+  'downloadsavage21.jpg','downloadmusic 6.jpg','downloadmusic8.jpg',
+  'downloadmusic9.jpg','downloadocto.jpg','khalimusic.png',
+  'downloadocto3.jpg');
+  banner=0;
+
+
+
+
+
+   if (document.images){ banner++
+if (banner==MyBanners.length) {
+banner=0}
+document.ChangeBanner.src=MyBanners[banner]
+setTimeout("ShowBanners()",1000)
+}
+}
+</script>
+
+  </body>
+</html>
